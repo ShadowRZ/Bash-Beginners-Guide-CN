@@ -1,24 +1,24 @@
 # Summary
 
 ### 介绍
-* [本指南由来](Intro/why.md)
-* [谁应该阅读此书？](Intro/who.md)
-* [新版本和取得方法](Intro/get.md)
+* [本指南由来](Intro/Why.md)
+* [谁应该阅读此书？](Intro/Who.md)
+* [新版本和取得方法](Intro/Get.md)
 * [历史修订](HISTORY.md)
 * [贡献](CONTIRBUTORS.md)
-* [反馈](Intro/feedback.md)
-* [版权信息](Intro/copyright.md)
-* [你需要什么？](Intro/what.md)
-* [本文档约定](Intro/arrangement.md)
-* [本文档组织结构](Intro/structure.md)
+* [反馈](Intro/Feedback.md)
+* [版权信息](Intro/Copyright.md)
+* [你需要什么？](Intro/What.md)
+* [本文档约定](Intro/Arrangement.md)
+* [本文档组织结构](Intro/Structure.md)
 
 --
 
-* Bash和Bash脚本
-  * 常用的shell程序
+* [Bash和Bash脚本](Bash-And-Bash-Script/README.md)
+  * [常用的shell程序](Bash-And-Bash-Script/Common-Shell.md)
     *  shell的普遍作用
     *  Shell类型
-  * Bourne Again SHell的优势
+  * [Bourne Again SHell的优势](Bash-And-Bash-Script/Advantages-Of-Bash.md)
     * Bash是GNU shell
     * Bash独有的特性
   * 执行命令

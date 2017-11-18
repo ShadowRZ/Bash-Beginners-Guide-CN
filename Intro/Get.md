@@ -5,5 +5,6 @@
 [Fultus.com](http://store.fultus.com/product_info.php?products_id=66) 已经有印刷版本。 
 
 ## 图1. 封面
-![Image of the bash guide for beginners](https://ooo.0o0.ooo/2017/11/18/5a0f9c663e4b8.jpg)
+![Image of the bash guide for beginners](https://i.loli.net/2017/11/18/5a0f9c663e4b8.jpg)
+
 封面，红色高亮代码配以蓝色背景。
