@@ -2,15 +2,15 @@
 
 ### 介绍
 * [本指南由来](Intro/why.md)
-* 谁应该阅读此书？
-* 新版本和取得方法
-* 历史修订
-* 贡献
-* 反馈
-* 版权信息
-* 你需要什么？
-* 本文档约定
-* 本文档组织结构
+* [谁应该阅读此书？](Intro/who.md)
+* [新版本和取得方法](Intro/get.md)
+* [历史修订](HISTORY.md)
+* [贡献](CONTIRBUTORS.md)
+* [反馈](Intro/feedback.md)
+* [版权信息](Intro/copyright.md)
+* [你需要什么？](Intro/what.md)
+* [本文档约定](Intro/arrangement.md)
+* [本文档组织结构](Intro/structure.md)
 
 --
 
