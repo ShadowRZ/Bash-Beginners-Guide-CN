@@ -38,15 +38,15 @@
  * [练习](Bash-And-Bash-Script/Exercise.md)
 * [编写和调试脚本](Writing-And-Debugging-Script/README.md)
  * [建立并且运行一个脚本](Writing-And-Debugging-Script/Writing-And-Debugging-A-Script.md)
-  * 编写与命名
-  * script1.sh
-  * 执行脚本
+   * 编写与命名
+   * script1.sh
+   * 执行脚本
  * [脚本基础](Writing-And-Debugging-Script/Scripts-Basic.md)
-  * 哪个Shell来执行脚本？
-  * 加入注释
+   * 哪个Shell来执行脚本？
+   * 加入注释
  * [调试Bash脚本](Writing-And-Debugging-Script/Debugging-Bash-Scripts.md)
-  * 调试整个脚本
-  * 调试部分脚本
+   * 调试整个脚本
+   * 调试部分脚本
  * [总结](Writing-And-Debugging-Script/Summary.md)
  * [练习](Writing-And-Debugging-Script/Exercise.md)
 --
