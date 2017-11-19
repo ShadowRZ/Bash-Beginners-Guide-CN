@@ -19,21 +19,21 @@
     *  [shell的普遍作用](Bash-And-Bash-Script/Common-Shell.md#shell的普遍作用)
     *  [Shell类型](Bash-And-Bash-Script/Common-Shell.md#shell类型)
   * [Bourne Again SHell的优势](Bash-And-Bash-Script/Advantages-Of-Bash.md)
-    * Bash是GNU shell
-    * Bash独有的特性
+    * [Bash是GNU shell](Bash-And-Bash-Script/Advantages-Of-Bash.md#bash是gnu-shell)
+    * [Bash独有的特性](Bash-And-Bash-Script/Advantages-Of-Bash.md#bash独有的特性)
   * [执行命令](Bash-And-Bash-Script/Executing-Commands.md)
-    * 概要
-    * Shell内建命令
-    * 从脚本执行程序
+    * [概要](Bash-And-Bash-Script/Executing-Commands.md#概要)
+    * [Shell内建命令](Bash-And-Bash-Script/Executing-Commands.md#shell内建命令)
+    * [从脚本执行程序](Bash-And-Bash-Script/Executing-Commands.md#从脚本执行程序)
   * [建立块](Bash-And-Bash-Script/Building-Blocks.md)
-    * Shell建立块
+    * [Shell建立块](Bash-And-Bash-Script/Building-Blocks.md#shell建立块)
   * [开发优良脚本](Bash-And-Bash-Script/Developing-Good-Scripts.md)
-    * 优良脚本的要素
-    * 结构
-    * 术语
-    * 关于顺序和逻辑
-    * 一个Bash脚本的例子：mysystem.sh
-    * init脚本例子
+    * [优良脚本的要素](Bash-And-Bash-Script/Developing-Good-Scripts.md#优良脚本的要素)
+    * [结构](Bash-And-Bash-Script/Developing-Good-Scripts.md#结构)
+    * [术语](Bash-And-Bash-Script/Developing-Good-Scripts.md#术语)
+    * [关于顺序和逻辑](Bash-And-Bash-Script/Developing-Good-Scripts.md#关于顺序和逻辑)
+    * [一个Bash脚本的例子：mysystem.sh](Bash-And-Bash-Script/Developing-Good-Scripts.md#一个bash脚本的例子mysystemsh)
+    * [init脚本例子](Bash-And-Bash-Script/Developing-Good-Scripts.md#init脚本例子)
   * [总结](Bash-And-Bash-Script/Summary.md)
   * [练习](Bash-And-Bash-Script/Exercise.md)
 

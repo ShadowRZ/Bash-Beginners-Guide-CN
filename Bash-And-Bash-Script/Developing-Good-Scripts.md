@@ -52,8 +52,8 @@ shell脚本的结构非常具有灵活性。即使在Bash中有很大的自由�
   4. Make settings permanent in user's crontab file.
  2. If no, go to step 3.
 2. Do you want to rotate another set of logs?
- 1. If yes: repeat step 1.
- 2. If no: go to step 3.
+  1. If yes: repeat step 1.
+  2. If no: go to step 3.
 3. Exit
 
 用户应该提供信息给程序来运行。必须得到并储存来自用户的输入。用户应该注意到她的crontab会发生改变。
