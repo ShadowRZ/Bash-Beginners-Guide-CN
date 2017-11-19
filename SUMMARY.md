@@ -32,7 +32,7 @@
     * [结构](Bash-And-Bash-Script/Developing-Good-Scripts.md#结构)
     * [术语](Bash-And-Bash-Script/Developing-Good-Scripts.md#术语)
     * [关于顺序和逻辑](Bash-And-Bash-Script/Developing-Good-Scripts.md#关于顺序和逻辑)
-    * [一个Bash脚本的例子：mysystem.sh](Bash-And-Bash-Script/Developing-Good-Scripts.md#一个bash脚本的例子mysystemsh)
+    * [一个Bash脚本的例子：mysystem.sh](Bash-And-Bash-Script/Developing-Good-Scripts.md#一个bash脚本的例子：mysystemsh)
     * [init脚本例子](Bash-And-Bash-Script/Developing-Good-Scripts.md#init脚本例子)
   * [总结](Bash-And-Bash-Script/Summary.md)
   * [练习](Bash-And-Bash-Script/Exercise.md)
