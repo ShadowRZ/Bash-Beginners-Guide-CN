@@ -60,7 +60,7 @@ shell脚本的结构非常具有灵活性。即使在Bash中有很大的自由�
 
 ## 一个Bash脚本的例子：mysystem.sh
 
-[`mysystem.sh`](../Scripts/mysystem.sh) 脚本执行了一些熟悉的命令，(`date`, `w`, `uname`, `uptime`) 来显示你和你机器的信息。
+[`mysystem.sh`](https://github.com/ShadowRZ/Bash-Beginners-Guide-CN/blob/master/Scripts/mysystem.sh) 脚本执行了一些熟悉的命令，(`date`, `w`, `uname`, `uptime`) 来显示你和你机器的信息。
 
 ```bash
 #!/bin/bash
