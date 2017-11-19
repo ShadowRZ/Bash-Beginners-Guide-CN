@@ -28,7 +28,7 @@
 
 * [第 10 章 _变量进阶_](../Advanced-Variables/README.md)：变量进阶：指定变量类型，介绍变量数组和变量操作。
 
-* [第 11 章 函数](../Functions/README.md)：函数：介绍。
+* [第 11 章 _函数_](../Functions/README.md)：函数：介绍。
 
-* [第 12 章 捕捉信号](../Catching-Signals/README.md)：捕捉信号：进程信号机制介绍，捕获用户发送的信号。
+* [第 12 章 _捕捉信号_](../Catching-Signals/README.md)：捕捉信号：进程信号机制介绍，捕获用户发送的信号。
 

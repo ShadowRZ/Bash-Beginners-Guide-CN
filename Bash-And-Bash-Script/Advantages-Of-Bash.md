@@ -214,5 +214,5 @@ Bash 使得使用提示变得更加有趣。参见Bash info页面的 _Controllin
 * [第 3.2 节 “变量”](../Bash-Environment/Variables.md)
 * [第 3.6 节 “更多 Bash 选项”](../Bash-Environment/More-Bash-Options.md)
 * Info Bash → Basic Shell 特性 → 重定向
-[第 8.2.3 节 “重定向和文件描述符”](../Writing-Interactive-Script/README.md)
+* [第 8.2.3 节 “重定向和文件描述符”](../Writing-Interactive-Script/README.md)
 
