@@ -21,21 +21,21 @@
   * [Bourne Again SHell的优势](Bash-And-Bash-Script/Advantages-Of-Bash.md)
     * Bash是GNU shell
     * Bash独有的特性
-  * 执行命令
+  * [执行命令](Bash-And-Bash-Script/Executing-Commands.md)
     * 概要
     * Shell内建命令
     * 从脚本执行程序
-  * 建立块
+  * [建立块](Bash-And-Bash-Script/Building-Blocks.md)
     * Shell建立块
-  * 开发优良脚本
+  * [开发优良脚本](Bash-And-Bash-Script/Developing-Good-Scripts.md)
     * 优良脚本的要素
     * 结构
     * 术语
     * 关于顺序和逻辑
     * 一个Bash脚本的例子：mysystem.sh
     * init脚本例子
-  * 总结
-  * 练习
+  * [总结](Bash-And-Bash-Script/Summary.md)
+  * [练习](Bash-And-Bash-Script/Exercise.md)
 
 --
 
