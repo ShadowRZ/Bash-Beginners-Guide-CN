@@ -16,8 +16,8 @@
 
 * [Bash和Bash脚本](Bash-And-Bash-Script/README.md)
   * [常用的shell程序](Bash-And-Bash-Script/Common-Shell.md)
-    *  shell的普遍作用
-    *  Shell类型
+    *  [shell的普遍作用](Bash-And-Bash-Script/Common-Shell.md#shell的普遍作用)
+    *  [Shell类型](Bash-And-Bash-Script/Common-Shell.md#shell类型)
   * [Bourne Again SHell的优势](Bash-And-Bash-Script/Advantages-Of-Bash.md)
     * Bash是GNU shell
     * Bash独有的特性
