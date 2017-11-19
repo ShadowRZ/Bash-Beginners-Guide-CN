@@ -12,7 +12,7 @@
 
 * Mendel Leo Cooper, for making room
 
-* #linux.be, for keeping my feet on the ground
+* \#linux.be, for keeping my feet on the ground
 
 * Frank Wang, for his detailed remarks on all the things I did wrong ;-)
 
