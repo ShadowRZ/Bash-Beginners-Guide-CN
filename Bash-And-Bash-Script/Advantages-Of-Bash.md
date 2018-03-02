@@ -2,9 +2,9 @@
 
 ## Bash是GNU shell
 
-GNU 计划(GNU's Not UNIX)为类UNIX系统管理提供遵守UNIX标准的免费软件。
+GNU 计划\(GNU's Not UNIX\)为类UNIX系统管理提供遵守UNIX标准的免费软件。
 
-Bash是兼容`sh`的shell且从Korn shell (`ksh`) 和 C shell (`csh`)整合了一些有用的特性。它遵循IEEE POSIX P1003.2/ISO 9945.2 Shell和工具标准。提供了基于sh的编程和交互的功能改进；其中包括命令行编辑，无限制的历史命令，作业控制，shell函数和别名，无大小限制的索引数组，和以2到64为基础的整数算法。Bash可以不经修改地运行多数`sh`脚本。
+Bash是兼容`sh`的shell且从Korn shell \(`ksh`\) 和 C shell \(`csh`\)整合了一些有用的特性。它遵循IEEE POSIX P1003.2/ISO 9945.2 Shell和工具标准。提供了基于sh的编程和交互的功能改进；其中包括命令行编辑，无限制的历史命令，作业控制，shell函数和别名，无大小限制的索引数组，和以2到64为基础的整数算法。Bash可以不经修改地运行多数`sh`脚本。
 
 和其他的GNU项目一样，Bash主动开始保留，保护和促进使用，学习，拷贝，修改和再发布软件的自由。普遍认为这样的情况激发了创造力。这也是Bash程序可以而许多其他shell无法提供的额外特性的缘由。
 
@@ -12,7 +12,7 @@ Bash是兼容`sh`的shell且从Korn shell (`ksh`) 和 C shell (`csh`)整合了�
 
 ### Invocation
 
-除了单字符shell命令行选项可以通常使用内建命令`set`来配置外，你还可以使用几种多字符选项。我们会在本章和后继章节中一系列的更流行的选项中留下深刻印象；完整的列表可以在Bash的info页面中找到，Bash 特性 → 调用 Bash。 
+除了单字符shell命令行选项可以通常使用内建命令`set`来配置外，你还可以使用几种多字符选项。我们会在本章和后继章节中一系列的更流行的选项中留下深刻印象；完整的列表可以在Bash的info页面中找到，Bash 特性 → 调用 Bash。
 
 ### Bash 启动文件
 
@@ -92,7 +92,7 @@ set -o posix
 
 **!!!警告!!! 避免使用r系列工具**
 
-要注意使用类似 `rlogin`, `telnet`, `rsh` 和 `rcp` 等工具的危险。由于他们在网络上传输数据是未经过加密的所以他们本质上是不安全的。如果你需要远程执行和文件传输之类的工具，推荐使用SSH，从 http://www.openssh.org 下载，不同的客户端程序已经出现非UNIX系统上，请检查本地的软件镜象。 
+要注意使用类似 `rlogin`, `telnet`, `rsh` 和 `rcp` 等工具的危险。由于他们在网络上传输数据是未经过加密的所以他们本质上是不安全的。如果你需要远程执行和文件传输之类的工具，推荐使用SSH，从 [http://www.openssh.org](http://www.openssh.org) 下载，不同的客户端程序已经出现非UNIX系统上，请检查本地的软件镜象。
 
 #### 当UID不等于EUID时候调用
 
@@ -102,15 +102,15 @@ set -o posix
 
 #### 什么是交互shell？
 
-交互shell通常在用户终端读取并且输入：输入输出都连接到终端。Bash交互行为在 `bash` 命令不带选项参数时候调用，除了选项是从标准输入读取得字符串或者 交互式行为在 `bash` 命令以没有非选项参数调用时启动，除了选项是一个需要来读取的字符串或者当shell从读取允许设置位置参数的标准输入调用 (参见 [第 3 章 _Bash环境_](../Bash-Environment/README.md) ). 
+交互shell通常在用户终端读取并且输入：输入输出都连接到终端。Bash交互行为在 `bash` 命令不带选项参数时候调用，除了选项是从标准输入读取得字符串或者 交互式行为在 `bash` 命令以没有非选项参数调用时启动，除了选项是一个需要来读取的字符串或者当shell从读取允许设置位置参数的标准输入调用 \(参见 [第 3 章 _Bash环境_](../Bash-Environment/README.md) \).
 
 #### 这个shell是交互的吗？
 
 以察看特殊参数 `-` 的内容来测试，当shell是交互时包含了一个'i'：
 
-```bash
-echo $-
-###himBH
+```console
+$ echo $-
+himBH
 ```
 
 在非交互shell中，提示，PS1，是没有设置的
@@ -121,7 +121,7 @@ echo $-
 
 * Bash读取起始文件。
 * 默认打开作业控制。
-* 提示已经设置好， PS2 为多行命令开启，通常设置到 “>”。 同样也会提示你当shell认为你输入了一个不完整的命令，比如当你忘记引号，命令结构不能被省略，等。
+* 提示已经设置好， PS2 为多行命令开启，通常设置到 “&gt;”。 同样也会提示你当shell认为你输入了一个不完整的命令，比如当你忘记引号，命令结构不能被省略，等。
 * 默认使用 `readline` 从命令行读取命令。
 * Bash解释shell选项 ignoreeof 而不是在接受到EOF之后立即退出。
 * 默认情况下历史命令和历史扩展式开启的。历史在shell退出时都保存在 `HISTFILE` 指向的文件中。默认情况下，`HISTFILE` 指向 `~/.bash_history`。
@@ -156,13 +156,13 @@ echo $-
 
 条件在 [第 7 章 _条件语句_](../Conditional-Statements/README.md)详细讨论。
 
-关于文件描述符得更多信息，请参见 [第 8.2.3 节 “重定向和文件描述符”](../Writing-Interactive-Script/README.md)。 
+关于文件描述符得更多信息，请参见 [第 8.2.3 节 “重定向和文件描述符”](../Writing-Interactive-Script/README.md)。
 
 ### Shell运算
 
 shell允许使用运算表达式作为一个shell扩展或者使用内建命令 `let` 求值。
 
-赋值用定宽整数完成且不进行溢出检查，尽管除以0被捕获并标记为一个错误。操作符和它们的的优先级和结合性和在C语言中是一样的，参见 [第 3 章 _Bash环境_](../Bash-Environment/README.md). 
+赋值用定宽整数完成且不进行溢出检查，尽管除以0被捕获并标记为一个错误。操作符和它们的的优先级和结合性和在C语言中是一样的，参见 [第 3 章 _Bash环境_](../Bash-Environment/README.md).
 
 ### 别名
 
@@ -172,7 +172,7 @@ Bash总是在执行某行的任何命令之前读取至少一个完整的输入�
 
 当一个函数定义被读取时别名定义就扩展开来，而不是在函数在执行的时候，因为一个函数定义本身就是一个复合命令。因而，在函数执行之后，在函数内的别名定义就不存在了。
 
-我们会在 [第 3.5 节 “别名”](../Bash-Environment/Alias.md) 具体讨论别名。 
+我们会在 [第 3.5 节 “别名”](../Bash-Environment/Alias.md) 具体讨论别名。
 
 ### 数组
 
@@ -188,7 +188,7 @@ Bash提供一维数组变量。任何变量都可以用在数组中； `declare`
 
 ### 提示
 
-Bash 使得使用提示变得更加有趣。参见Bash info页面的 _Controlling the Prompt_ 一节。 
+Bash 使得使用提示变得更加有趣。参见Bash info页面的 _Controlling the Prompt_ 一节。
 
 ### 受限制shell
 
@@ -197,7 +197,7 @@ Bash 使得使用提示变得更加有趣。参见Bash info页面的 _Controllin
 * `cd` 内建命令被禁止。
 * 不能设置和反设置 `SHELL`, `PATH`, `ENV` or `BASH_ENV`。
 * 命令不能再包含斜杠。
-* 包含斜杠的文件名不允许和 `.` (`source`) 内建命令一起使用。
+* 包含斜杠的文件名不允许和 `.` \(`source`\) 内建命令一起使用。
 * `hash` 内建命令不接受斜杠带 `-p` 选项。
 * 在启动的时候输入函数禁止。
 * `SHELLOPTS` 在启动时候被忽略。
@@ -215,4 +215,6 @@ Bash 使得使用提示变得更加有趣。参见Bash info页面的 _Controllin
 * [第 3.6 节 “更多 Bash 选项”](../Bash-Environment/More-Bash-Options.md)
 * Info Bash → Basic Shell 特性 → 重定向
 * [第 8.2.3 节 “重定向和文件描述符”](../Writing-Interactive-Script/README.md)
+
+
 

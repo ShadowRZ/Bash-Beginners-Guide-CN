@@ -27,7 +27,7 @@ shell脚本的结构非常具有灵活性。即使在Bash中有很大的自由�
 下表给出了你需要熟悉的编程条款的概览：
 
 | 术语 | 含义 |
-| ------ | ------ |
+| --- | --- |
 | 命令控制 | 测试一个命令的退出状态来决定应该执行哪部分的程序。 |
 | 条件分支 | 在程序中条件决定接下来该怎么办的逻辑点。 |
 | 逻辑流程 | 程序的总体设计。决定任务的逻辑顺序，使得结果是成功的且是可以控制的。 |
@@ -45,22 +45,22 @@ shell脚本的结构非常具有灵活性。即使在Bash中有很大的自由�
 下面的例子现实了这样一个逻辑流程设计。描述了日志文件的轮换。例子显示了一个可能的重复循环，以你想轮换的基本日志文件的数量来控制：
 
 1. Do you want to rotate logs?
- 1. If yes:
-  1. Enter directory name containing the logs to be rotated.
-  2. Enter base name of the log file.
-  3. Enter number of days logs should be kept.
-  4. Make settings permanent in user's crontab file.
- 2. If no, go to step 3.
+   1. If yes:
+      1. Enter directory name containing the logs to be rotated.
+      2. Enter base name of the log file.
+      3. Enter number of days logs should be kept.
+      4. Make settings permanent in user's crontab file.
+   2. If no, go to step 3.
 2. Do you want to rotate another set of logs?
-  1. If yes: repeat step 1.
-  2. If no: go to step 3.
+   1. If yes: repeat step 1.
+   2. If no: go to step 3.
 3. Exit
 
 用户应该提供信息给程序来运行。必须得到并储存来自用户的输入。用户应该注意到她的crontab会发生改变。
 
 ## 一个Bash脚本的例子：mysystem.sh
 
-[`mysystem.sh`](https://github.com/ShadowRZ/Bash-Beginners-Guide-CN/blob/master/Scripts/mysystem.sh) 脚本执行了一些熟悉的命令，(`date`, `w`, `uname`, `uptime`) 来显示你和你机器的信息。
+[`mysystem.sh`](https://github.com/ShadowRZ/Bash-Beginners-Guide-CN/blob/master/Scripts/mysystem.sh) 脚本执行了一些熟悉的命令，\(`date`, `w`, `uname`, `uptime`\) 来显示你和你机器的信息。
 
 ```bash
 #!/bin/bash
@@ -88,7 +88,7 @@ echo
 echo "That's all folks!"
 ```
 
-脚本总是以相同的2个字符开始，“#!”。之后，shell会执行定义在第一行之后的命令。脚本在第1行清除屏幕内容。第2行打印一条语句，通知用户将要发生的事情。第5行问候用户。第6，9，13，16和20行是为了按顺序输出显示。第8行打印了当前的日期和周数。第11行市又一个提示信息，和第3，8，22行一样。第12行格式化 `w` 的输出；第15行显示了操作系统和CPU信息。第19行给出了uptime和load信息。
+脚本总是以相同的2个字符开始，“\#!”。之后，shell会执行定义在第一行之后的命令。脚本在第1行清除屏幕内容。第2行打印一条语句，通知用户将要发生的事情。第5行问候用户。第6，9，13，16和20行是为了按顺序输出显示。第8行打印了当前的日期和周数。第11行市又一个提示信息，和第3，8，22行一样。第12行格式化 `w` 的输出；第15行显示了操作系统和CPU信息。第19行给出了uptime和load信息。
 
 `echo` 和 `printf` 都是Bash内建命令。第一个总是以状态0退出，且简单地把参数在标准输出打印出来，而后者允许定义一个格式化字符串且在失败后返回一个非零的退出状态。
 
@@ -152,3 +152,4 @@ exit 0
 ```
 
 `case` 语句经常使用在这类脚本当中，在[第 7.2.5 节 “使用exit语句和if”]()中会解释。
+

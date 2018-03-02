@@ -10,7 +10,7 @@
 
 * 输入用字和操作符分割开，遵守引号规则，参见 [第 3 章 _Bash环境_](../Bash-Environment/README.md)。 这些记号使用 _特殊字符_ 来分隔。别名扩展也执行。
 
-* shell _解析_ (搜索和替换) the tokens 成简单复合的命令。
+* shell _解析_ \(搜索和替换\) the tokens 成简单复合的命令。
 
 * Bash执行多种shell扩展，把扩展记号分开成文件名的列表和命令以及参数。
 
@@ -26,10 +26,10 @@
 
 更复杂的shell命令由简单的命令以多种方式组织在一起：例如管道把一个命令的输出变成另外一个命令的输入，循环或者条件结构，或者其他的组织方式。请看一些例子：
 
-```bash
-ls | more
+```console
+$ ls | more
 
-gunzip file.tar.gz | tar xvf -
+$ gunzip file.tar.gz | tar xvf -
 ```
 
 ### Shell函数
@@ -68,13 +68,13 @@ Shell扩展在每个命令行被分隔成记号（tokens）后执行。这些是
 
 ### 执行命令
 
-当执行一个命令时，When executing a command, the words that the parser has marked as variable assignments (preceding the command name) and redirections are saved for later reference. Words that are not variable assignments or redirections are expanded; the first remaining word after expansion is taken to be the name of the command and the rest are arguments to that command. Then redirections are performed, then strings assigned to variables are expanded. If no command name results, variables will affect the current shell environment.
+当执行一个命令时，When executing a command, the words that the parser has marked as variable assignments \(preceding the command name\) and redirections are saved for later reference. Words that are not variable assignments or redirections are expanded; the first remaining word after expansion is taken to be the name of the command and the rest are arguments to that command. Then redirections are performed, then strings assigned to variables are expanded. If no command name results, variables will affect the current shell environment.
 
 shell任务的一个重要部分是搜索命令。Bash是按照下面的步骤来完成的：
 
 * 检查命令是否包含斜杠。如果没有，首先检查函数列表是否包含一个我们寻找的命令。
 * 如果命令不是一个函数，那么在内建命令列表中检查。
-* 如果命令既不是函数也不是内建命令，那么扫描列在 `PATH` 中的目录列表来进行查找。Bash使用一个 _hash table_ (内存中的数据存放区域) 来记忆可执行文件的完整路径，这样能防止对 `PATH` 的扩展搜索。
+* 如果命令既不是函数也不是内建命令，那么扫描列在 `PATH` 中的目录列表来进行查找。Bash使用一个 _hash table_ \(内存中的数据存放区域\) 来记忆可执行文件的完整路径，这样能防止对 `PATH` 的扩展搜索。
 * 如果搜索没有成功，Bash打印一条错误消息并返回退出状态127。
 * 如果搜索成功或者命令包含一个斜杠，shell在一个单独执行环境中执行这个命令。
 * 如果因为文件是不可执行的或者不是一个目录造成执行失败，就假设是一个shell脚本。
@@ -83,3 +83,4 @@ shell任务的一个重要部分是搜索命令。Bash是按照下面的步骤�
 ### Shell脚本
 
 调用`bash`时，当一个包含shell命令的文件被用作第一个非选项参数时候（不带 `-c` 或者 `-s`，这两个参数将会创建一个非交互的shell）。这个shell首先搜寻脚本文件所在的当前目录，如果没有找到则对环境变量 PATH 进行查找。
+

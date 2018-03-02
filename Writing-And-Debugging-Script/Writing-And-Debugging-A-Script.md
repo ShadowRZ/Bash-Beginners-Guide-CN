@@ -26,8 +26,8 @@ locate script_name
 
 正好自己写一下脚本。建立一个目录 `~/scripts` 来存放你的脚本将会是个好主意。把此目录添加到 `PATH` 变量中： 
 
-```bash
-export PATH="$PATH:~/scripts"
+```console
+$ export PATH="$PATH:~/scripts"
 ```
 
 如果你才开始使用Bash，最好使用一个给不同结构以不同颜色的文本编辑器。`vim`，`gvim`，`(x)emacs`，`kwrite`和许多其他支持语法高亮的编辑器；详细请察看编辑器的文档。 
@@ -40,58 +40,56 @@ export PATH="$PATH:~/scripts"
 
 为了能使当前用户运行脚本，它应该有可执行权限。在设置权限时，检查你是否得到你想要得权限。完成后脚本就可以象其他命令一样运行： 
 
-```bash
-chmod u+x script1.sh
+```console
+$ chmod u+x script1.sh
+$ ls -l script1.sh
+-rwxrw-r--    1 willy	willy		456 Dec 24 17:11 script1.sh
+$ script1.sh
+The script starts now.
+Hi, willy!
 
-ls -l script1.sh
-###-rwxrw-r--    1 willy	willy		456 Dec 24 17:11 script1.sh
+I will now fetch you a list of connected users:
 
-script1.sh
-###The script starts now.
-###Hi, willy!
-###
-###I will now fetch you a list of connected users:
-###
-###  3:38pm  up 18 days,  5:37,  4 users,  load average: 0.12, 0.22, 0.15
-###USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU  WHAT
-###root     tty2     -                Sat 2pm  4:25m  0.24s  0.05s  -bash
-###willy	 :0       -                Sat 2pm   ?     0.00s   ?     -
-###willy    pts/3    -                Sat 2pm  3:33m 36.39s 36.39s  BitchX willy ir
-###willy    pts/2    -                Sat 2pm  3:33m  0.13s  0.06s  /usr/bin/screen
-###
-###I'm setting two variables now.
-###This is a string: black
-###And this is a number: 9
-###
-###I'm giving you back your prompt now.
+  3:38pm  up 18 days,  5:37,  4 users,  load average: 0.12, 0.22, 0.15
+USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU  WHAT
+root     tty2     -                Sat 2pm  4:25m  0.24s  0.05s  -bash
+willy	 :0       -                Sat 2pm   ?     0.00s   ?     -
+willy    pts/3    -                Sat 2pm  3:33m 36.39s 36.39s  BitchX willy ir
+willy    pts/2    -                Sat 2pm  3:33m  0.13s  0.06s  /usr/bin/screen
 
-echo $COLOUR
+I'm setting two variables now.
+This is a string: black
+And this is a number: 9
 
-echo $VALUE
+I'm giving you back your prompt now.
+
+$ echo $COLOUR
+
+$ echo $VALUE
 ```
 
 这是执行脚本最普通的方法。在子shell中一般都是这么执行脚本。建立在子shell中的变量，函数和别名等只有子shell使用。当那个shell退出，父shell重新得到控制的时候，所有的东西都被清空，脚本对shell状态所作的改变耶全部清除。
 
 如果你没有把 `scripts` 的目录放到`PATH`里面，当前目录也不在`PATH`变量中，那么你可以这样来执行脚本： 
 
-```bash
-./script_name.sh
+```console
+$ ./script_name.sh
 ```
 
 脚本也可以被明确地指定shell执行，不过通常我们只有在想得到特殊的行为时候才这样做，比如脚本是否能在另外一个shell里面工作或者打印调试的信息：
 
-```bash
-rbash script_name.sh
-sh script_name.sh
-bash -x script_name.sh
+```console
+$ rbash script_name.sh
+$ sh script_name.sh
+$ bash -x script_name.sh
 ```
 
 特定的shell会成为当前shell子shell来运行脚本。当你想以特殊的选项或者以脚本没有指定的特殊条件来启动脚本时候可以这么做。
 
 如果你想在当前脚本执行脚本而不想启动一个新的shell，你可以使用`source`：
 
-```bash
-source script_name.sh
+```console
+$ source script_name.sh
 ```
 
 **iii提示iii source = .**
@@ -100,10 +98,10 @@ Bash内建命令 `source` 是和Bourne shell的 `.` (dot) 命令具有相同含�
 
 这里脚本不需要可执行权限。命令在当前shell力执行，所以任何对环境的改变，将在脚本结束时同样起作用：
 
-```bash
-source script1.sh
-###--output ommitted--
+```console
+$ source script1.sh
+--output ommitted--
 
-echo $VALUE
-###9
+$ echo $VALUE
+9
 ```
